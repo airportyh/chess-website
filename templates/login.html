@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+    </head>
+    <body>
+        {% if success %}
+            <h1>Hello, {{ username }}! You successfully logged in!!</h1>
+        {% else %}
+            <h1>Login</h1>
+            
+            {% if username %}
+                <p style="color: red;">Incorrect username and/or password.</p>
+            {% endif %}
+            
+            <form action="login" method="post">
+                <label>Username</label>
+                <input type="text" name="username">
+                <br>
+                <label>Password</label>
+                <input type="password" name="password">
+                <br>
+                <button type="submit">Login</button>
+            </form>
+        {% endif %}
+    </body>
+</html>

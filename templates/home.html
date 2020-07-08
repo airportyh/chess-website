@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home - Chess</title>
+    </head>
+    <body>
+        <h1>{{ username }}, you Like Chess?</h1>
+        <p>Welcome!</p>
+        {% if username == "Noboby" %}
+            <p>Don't want to be nobody?</p>
+            <a href="/login">Log in</a>
+        {% endif %}
+    </body>
+</html>

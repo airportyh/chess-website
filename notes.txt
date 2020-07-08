@@ -1,0 +1,7 @@
+https://www.codementor.io/@garethdwyer/building-a-crud-application-with-flask-and-sqlalchemy-dm3wv7yu2
+https://stackoverflow.com/questions/5420789/how-to-install-psycopg2-with-pip-on-python
+
+Packages:
+
+pip3 install --user psycopg2-binary
+pip3 install --user flask sqlalchemy flask-sqlalchemy
